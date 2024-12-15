@@ -26,6 +26,29 @@ This project aims to predict restaurant ratings and comprehensively analyze a re
 - Folium
 - Imbalanced-learn
 
+## Code Explanation
+
+### **Level 1: Data Preparation and Exploration**
+
+- **Dataset Loading and Exploring:** Loads the dataset, displays initial rows, and checks data types.
+- **Type Conversion:** Converts categorical columns to numerical representations using ordinal encoding, one-hot encoding, and multi-label encoding.
+- **Missing Value Handling:** Identifies and handles missing values, primarily by dropping rows.
+- **Class Imbalance:** Addresses class imbalance in the target variable using SMOTENC to oversample minority classes.
+- **Data Description:** Provides descriptive statistics for numerical features and creates visualizations (histograms, box plots).
+- **Categorical Value Analysis:** Analyzes top cuisines and cities with the highest restaurant count using visualizations.
+- **Geospatial Analysis:** Creates an interactive map to visualize restaurant locations using Folium.
+
+### **Level 2: Feature Analysis and Engineering**
+
+- **Table Booking and Online Delivery:** Explores the relationship between table booking, online delivery, and ratings.
+- **Price Range Analysis:** Analyzes the distribution of price ranges and their impact on ratings.
+- **Feature Engineering:** Creates new features, such as restaurant name length and address length, to potentially improve model performance.
+
+### **Level 3: Predictive Modeling and Customer Preference Analysis**
+
+- **Predictive Modeling:** Builds and evaluates predictive models (Linear Regression, Decision Tree, Random Forest) using selected features.
+- **Customer Preference Analysis:** Identifies popular cuisines, highly-rated cuisines, and customer preferences based on votes and average ratings.
+
 ## Dataset
 
 The project uses a restaurant dataset containing information about various restaurants, including location, cuisine, price range, ratings, and more.
@@ -35,3 +58,7 @@ The project uses a restaurant dataset containing information about various resta
 - The project provides insights into restaurant ratings, popular cuisines, customer preferences, and pricing trends.
 - Predictive models are developed to estimate restaurant ratings with reasonable accuracy.
 - The analysis helps understand factors influencing restaurant ratings and customer choices.
+
+## Internship with Conifyz Technologies
+
+This project was undertaken during an internship with Conifyz Technologies, providing valuable experience in data science and machine learning techniques applied to real-world data.
